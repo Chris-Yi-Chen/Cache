@@ -830,11 +830,11 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(460,1100)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="Initialize"/>
+      <a name="label" val="Ready"/>
     </comp>
     <comp lib="0" loc="(460,1220)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="Initialize"/>
+      <a name="label" val="Ready"/>
     </comp>
     <comp lib="0" loc="(500,1140)" name="Tunnel">
       <a name="label" val="CpuReadIn"/>
@@ -909,6 +909,10 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(760,1040)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Dirty"/>
+    </comp>
+    <comp lib="0" loc="(760,1070)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
     </comp>
     <comp lib="0" loc="(760,940)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1215,6 +1219,7 @@ end TCL_Generic;&#13;
     <wire from="(710,270)" to="(730,270)"/>
     <wire from="(760,1010)" to="(770,1010)"/>
     <wire from="(760,1040)" to="(770,1040)"/>
+    <wire from="(760,1070)" to="(780,1070)"/>
     <wire from="(760,940)" to="(780,940)"/>
     <wire from="(760,970)" to="(770,970)"/>
     <wire from="(770,1000)" to="(770,1010)"/>
@@ -1223,6 +1228,7 @@ end TCL_Generic;&#13;
     <wire from="(770,1020)" to="(780,1020)"/>
     <wire from="(770,970)" to="(770,980)"/>
     <wire from="(770,980)" to="(780,980)"/>
+    <wire from="(780,1040)" to="(780,1070)"/>
     <wire from="(780,940)" to="(780,960)"/>
     <wire from="(860,430)" to="(940,430)"/>
     <wire from="(860,460)" to="(930,460)"/>
@@ -3652,6 +3658,13 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(130,160)" name="Tunnel">
       <a name="label" val="Dirty"/>
     </comp>
+    <comp lib="0" loc="(130,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ClkIn"/>
+    </comp>
+    <comp lib="0" loc="(130,190)" name="Tunnel">
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="0" loc="(130,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Read"/>
@@ -3674,6 +3687,10 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(260,400)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Dirty"/>
+    </comp>
+    <comp lib="0" loc="(570,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
     </comp>
     <comp lib="0" loc="(990,270)" name="Tunnel">
       <a name="label" val="Ready"/>
@@ -3720,6 +3737,7 @@ end TCL_Generic;&#13;
     <wire from="(280,360)" to="(280,370)"/>
     <wire from="(280,380)" to="(280,400)"/>
     <wire from="(500,300)" to="(580,300)"/>
+    <wire from="(570,340)" to="(580,340)"/>
     <wire from="(640,300)" to="(690,300)"/>
     <wire from="(690,170)" to="(690,300)"/>
     <wire from="(690,300)" to="(730,300)"/>
